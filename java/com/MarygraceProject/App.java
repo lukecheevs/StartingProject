@@ -2,6 +2,7 @@ package com.MarygraceProject;
 
 import com.MarygraceProject.Util.MarygraceUtil;
 import com.MarygraceProject.model.Marygrace;
+import com.MarygraceProject.tony.Tony;
 
 //This will be our class for running the app
 //usually not very big and contains a main method
@@ -68,6 +69,12 @@ public class App {
 
 		System.out.println("BestPersonNames are now " + firstMarge.getBestPersonEver() + " for marge1 and "
 				+ secondMarge.getBestPersonEver() + " for marge2");
+		
+		Tony tony = new Tony("Chico");
+		
+		assert tony.getPet().equalsIgnoreCase("chico");
+		
+		Tony.printFriends();
 
 	}
 
